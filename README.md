@@ -90,12 +90,12 @@ done
 
 ## Free tier limits
 
-The free tier of ParlayAPI gives you 1,000 requests/month. Each scan = 1 request per sport. So:
+The free tier of ParlayAPI gives you 1,000 credits/month, no card required. Each scan = 1 credit per sport. So:
 
-- 6 sports × 1 request × 60-second poll = 6 requests/minute = 8,640/day
+- 6 sports × 1 credit × 60-second poll = 6 credits/minute = 8,640/day
 - That'll run through your free tier in ~3 hours
 
-If you want to run continuously, upgrade to **Starter at $19/month** (100K requests = ~12 hours/day on this config) or **Pro at $99/month** which adds WebSocket support so you can listen for edge alerts in real time without polling.
+If you want to run continuously, upgrade to a paid tier; current prices and credit sizes are on the [pricing page](https://parlay-api.com/pricing). WebSocket streaming (edge alerts in real time, no polling) is available on Business tier and up.
 
 ## More features to try
 
@@ -105,14 +105,14 @@ The starter is intentionally minimal. Once you have it running, look at the [Par
 - `/v1/sports/{sport_key}/compare`: side-by-side line comparison
 - `/v1/prediction-markets/{sport_key}`: Kalshi + Polymarket arbitrage vs sportsbooks
 - `/v1/historical/sports/{sport_key}/odds`: backtesting data (1.15M+ rows back to 2005)
-- WebSocket: `wss://parlay-api.com/ws/odds/{sport_key}` for sub-second updates (Pro tier)
+- WebSocket: `wss://parlay-api.com/ws/odds/{sport_key}` for sub-second updates (Business tier and up)
 
-Or hook ParlayAPI directly into Claude / Cursor / Continue / Devin via the [official MCP server](https://github.com/JacobiusMakes/parlay-api-mcp): `pip install parlay-api-mcp`.
+Or hook ParlayAPI directly into Claude / Cursor / Continue / Devin via the [official MCP server](https://github.com/JacobiusMakes/parlay-api-mcp): `pip install parlayapi-mcp`, or use the hosted endpoint with no install: `POST https://parlay-api.com/mcp/http`.
 
 ## Disclaimers
 
 - This code finds opportunities; it does not place bets. Connecting to a sportsbook API and placing real bets carries legal, regulatory, and financial risk.
-- Arbitrage windows close fast. By the time you see one, it may already be gone. Real arb operators run sub-second WebSocket pipelines on Pro+ tiers.
+- Arbitrage windows close fast. By the time you see one, it may already be gone. Real arb operators run sub-second WebSocket pipelines (Business tier and up).
 - Do not bet money you cannot afford to lose. Sports betting is gambling.
 
 ## License
