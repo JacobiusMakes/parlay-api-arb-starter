@@ -101,10 +101,10 @@ If you want to run continuously, upgrade to **Starter at $19/month** (100K reque
 
 The starter is intentionally minimal. Once you have it running, look at the [ParlayAPI docs](https://parlay-api.com/docs) for:
 
-- `/v1/sports/{sport_key}/ev` — pre-computed +EV bets vs no-vig consensus
-- `/v1/sports/{sport_key}/compare` — side-by-side line comparison
-- `/v1/prediction-markets/{sport_key}` — Kalshi + Polymarket arbitrage vs sportsbooks
-- `/v1/historical/sports/{sport_key}/odds` — backtesting data (1.15M+ rows back to 2005)
+- `/v1/sports/{sport_key}/ev`: pre-computed +EV bets vs no-vig consensus
+- `/v1/sports/{sport_key}/compare`: side-by-side line comparison
+- `/v1/prediction-markets/{sport_key}`: Kalshi + Polymarket arbitrage vs sportsbooks
+- `/v1/historical/sports/{sport_key}/odds`: backtesting data (1.15M+ rows back to 2005)
 - WebSocket: `wss://parlay-api.com/ws/odds/{sport_key}` for sub-second updates (Pro tier)
 
 Or hook ParlayAPI directly into Claude / Cursor / Continue / Devin via the [official MCP server](https://github.com/JacobiusMakes/parlay-api-mcp): `pip install parlay-api-mcp`.
