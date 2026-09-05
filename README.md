@@ -122,3 +122,7 @@ MIT. Fork, modify, ship.
 ## Get a free API key
 
 https://parlay-api.com/signup
+
+---
+
+Part of the [ParlayAPI](https://parlay-api.com) ecosystem: a real-time sports odds API with a free tier of 1,000 credits per month, no card required. Explore all the tools at [github.com/JacobiusMakes](https://github.com/JacobiusMakes).
